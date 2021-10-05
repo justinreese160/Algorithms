@@ -1,3 +1,28 @@
+let num = 15
+
+function fizzBuzz(num) {
+    for (let i = 0; i <= num; i++) {
+        if ((i % 3 === 0) && (i % 5 === 0)) {
+            console.log("fizzbuzz", i);   
+           }
+           else if (i % 5 === 0) {
+             console.log("buzz", i);  
+           }
+           else if (i % 3 === 0) {
+            console.log("fizz", i);  
+          } 
+          else {
+              console.log(i)
+          }
+        
+    }
+  
+    
+}
+fizzBuzz(num)
+
+
+
 // FIZZBUZZ is a classic beginner js whiteboarding challenge:
 
 // print all numbers from 1 to `num`

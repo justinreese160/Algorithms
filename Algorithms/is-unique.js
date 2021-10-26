@@ -1,12 +1,23 @@
-// Write code to create a function that accepts an array numbers
-// Return `true` is no number appears in the array more than once, else return `false`
-testArray = [1, 2, 3, 5, 3, 7, 1] //false//
-testArray2 = [1, 2, 3, 4] //true//
-
-var isUnique = function(arr) {
-for (let i = 0; i < arr.length; i++) {
-
-    
-}  
+//write code to create a function that accepts an array of numbers
+//return 'true' if each number in its own individual array is unique, else return 'false'
+const testArr = [1, 2, 3, 4, 5, 6]; //returns true
+const unique = async (arr) => {
+  const findUnique = await arr.filter((data, j) => {
+    for (i = 0; i < arr.length; i++) {
+      if (data === arr[i] && i !== j) {
+        return data;
+      } else {
+        console.log("false");
+      }
+    }
+  });
+  let isUnique = findUnique.length > 0 ? false : true;
+  return isUnique;
 };
-isUnique(testArray)
+let test = unique(testArr);
+console.log(test);
+
+
+
+
+

@@ -6,7 +6,6 @@ const string1 = "abracadabra"
 const string2 = "dab"
 
 var permutationSubstring = function(str, sub) {
-    
 
 };
 

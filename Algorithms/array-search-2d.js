@@ -3,27 +3,24 @@
 // Return the number of times "X" appears in the 2D array
 var gfg = new Array(2);
 
-var arraySearch2D = function(arr) {
-for (let i = 0; i < gfg.length; i++) {
-    gfg[i]= new Array(2);
-}
+var arraySearch2D = function (arr) {
+  for (let i = 0; i < gfg.length; i++) {
+    gfg[i] = new Array(2);
+  }
 
-var h = 0;
+  var h = 0;
 
-for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i++) {
     for (let j = 0; j < 2; j++) {
-     gfg[i][j] = h++ 
-        
+      gfg[i][j] = h++;
     }
-    
-}
+  }
 
-for (let i = 0; i < 2; i++) {
-   for (let j = 0; j < 2; j++) {
-   console.log(gfg[i][j] + ' ');    
-   }
-}
-
+  for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+      console.log(gfg[i][j] + " ");
+    }
+  }
 };
 
-arraySearch2D()
+arraySearch2D();

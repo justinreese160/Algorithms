@@ -2,27 +2,25 @@
 
 testString = "character";
 
-
-var characterCount = function(str) {
-   if (str.length == 0) {
-      console.log('Invalid String')
-      return;
-   }
-   for (let i = 0; i < str.length; i++) {
+var characterCount = function (str) {
+  if (str.length == 0) {
+    console.log("Invalid String");
+    return;
+  }
+  for (let i = 0; i < str.length; i++) {
     let count = 0;
     for (let j = 0; j < str.length; j++) {
-      if (str[i] == str[j] && i >j) {
-        break; 
-      } 
-       if (str[i] == str[j]) {
-          count ++
-       }
-    }
-      if (count > 0) {
-         console.log(`${str[i]} occurs ${count} times`)
+      if (str[i] == str[j] && i > j) {
+        break;
       }
-   }
-   
+      if (str[i] == str[j]) {
+        count++;
+      }
+    }
+    if (count > 0) {
+      console.log(`${str[i]} occurs ${count} times`);
+    }
+  }
 };
 
-characterCount(testString)
+characterCount(testString);
